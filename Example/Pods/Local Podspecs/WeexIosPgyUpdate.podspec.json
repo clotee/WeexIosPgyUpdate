@@ -1,9 +1,9 @@
 {
   "name": "WeexIosPgyUpdate",
-  "version": "0.1.0",
+  "version": "0.2.4",
   "summary": "A short description of WeexIosPgyUpdate.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/clotee@foxmail.com/WeexIosPgyUpdate",
+  "homepage": "https://github.com/clotee/WeexIosPgyUpdate",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,25 @@
     "clotee@foxmail.com": "clotee@foxmail.com"
   },
   "source": {
-    "git": "https://github.com/clotee@foxmail.com/WeexIosPgyUpdate.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/clotee/WeexIosPgyUpdate.git",
+    "tag": "0.2.4"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "WeexIosPgyUpdate/Classes/**/*"
+  "source_files": "WeexIosPgyUpdate/Classes/*.{h,m}",
+  "dependencies": {
+    "WeexSDK": [
+      "0.18"
+    ],
+    "WeexPluginLoader": [
+
+    ],
+    "Pgyer": [
+
+    ],
+    "PgyUpdate": [
+
+    ]
+  }
 }

@@ -21,9 +21,8 @@ WX_EXPORT_METHOD(@selector(checkUpdate::))
 //    [[PgyManager sharedPgyManager] startManagerWithAppId:appId];
 //}
 
--(void)checkUpdate:(NSString *)appId (WXModuleCallback)callback{
-    
-    [[PGUpdate sharedPgyManager] checkUpdate:appId ^(id error, id result) {
+-(void)checkUpdate:(NSString *)appId :(WXModuleCallback)callback{
+    [[PGUpdate sharedPgyManager] checkUpdate:appId :^(id error, id result) {
         if (error) {
             if (callback) {
                 callback(error);
