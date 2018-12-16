@@ -1,0 +1,19 @@
+PODS:
+  - Kiwi (3.0.0)
+  - WeexIosPgyUpdate (0.1.0)
+
+DEPENDENCIES:
+  - Kiwi
+  - WeexIosPgyUpdate (from `../`)
+
+EXTERNAL SOURCES:
+  WeexIosPgyUpdate:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
+  WeexIosPgyUpdate: 01c92175cec6ecb892ef900b07fbe496d4efddb7
+
+PODFILE CHECKSUM: f3f5a238a5aadb07059a1e638c13553fbdee6dd6
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,6 @@
+framework module Pods_WeexIosPgyUpdate_Tests {
+  umbrella header "Pods-WeexIosPgyUpdate_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
