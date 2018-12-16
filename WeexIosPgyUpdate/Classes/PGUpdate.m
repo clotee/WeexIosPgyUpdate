@@ -21,16 +21,18 @@
     return manager;
 }
 
-+ (void)initPGAPI:(NSString *)appId {
+//+ (void)initPGAPI:(NSString *)appId {
     //启动基本SDK
-    [[PgyManager sharedPgyManager] startManagerWithAppId:appId];
+//    [[PgyManager sharedPgyManager] startManagerWithAppId:appId];
     //启动更新检查SDK
-    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:appId];
-    [[PgyUpdateManager sharedPgyManager] checkUpdate];
-}
+//    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:appId];
+//    [[PgyUpdateManager sharedPgyManager] checkUpdate];
+//}
 
 - (void)checkUpdate:(NSString *)appId :(PGUpdateCallback)callback {
-    [PGUpdate initPGAPI: appId];
+//    [PGUpdate initPGAPI: appId];
+    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:ios_appid];
+    [[PgyUpdateManager sharedPgyManager] checkUpdate];
     callback(nil, nil);
 }
 

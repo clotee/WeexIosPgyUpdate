@@ -13,7 +13,7 @@
 #import <PgyUpdate/PgyUpdateManager.h>
 #import <PgySDK/PgyManager.h>
 
-@interface PGUpdate : NSObject <PGUpdateAppDelegate>
+@interface PGUpdate : NSObject
 
 @property (nonatomic, strong) NSString *appId;
 
@@ -21,7 +21,7 @@ typedef void (^PGUpdateCallback)(id error, id result);
 
 + (PGUpdate *)singletonManger;
 
-+ (void)initPGAPI:(NSString *)appId;
+//+ (void)initPGAPI:(NSString *)appId;
 - (void)checkUpdate:(NSString *)appId (PGUpdateCallback)callback;
 
 @end

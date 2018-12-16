@@ -16,10 +16,10 @@
 WX_PlUGIN_EXPORT_MODULE(pgupdate, PGUpdateModule)
 WX_EXPORT_METHOD(@selector(checkUpdate::))
 
-- (void)init:(NSString *)appId :(WXModuleCallback)callback{
-    //启动基本SDK
-    [[PgyManager sharedPgyManager] startManagerWithAppId:appId];
-}
+//- (void)init:(NSString *)appId :(WXModuleCallback)callback{
+//    //启动基本SDK
+//    [[PgyManager sharedPgyManager] startManagerWithAppId:appId];
+//}
 
 -(void)checkUpdate:(NSString *)appId (WXModuleCallback)callback{
     
