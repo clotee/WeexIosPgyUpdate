@@ -30,8 +30,7 @@
 //}
 
 - (void)checkUpdate:(NSString *)appId :(PGUpdateCallback)callback {
-//    [PGUpdate initPGAPI: appId];
-    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:ios_appid];
+    [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:appId];
     [[PgyUpdateManager sharedPgyManager] checkUpdate];
     callback(nil, nil);
 }

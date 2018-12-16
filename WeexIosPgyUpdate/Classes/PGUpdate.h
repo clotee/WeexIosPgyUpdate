@@ -21,8 +21,7 @@ typedef void (^PGUpdateCallback)(id error, id result);
 
 + (PGUpdate *)singletonManger;
 
-//+ (void)initPGAPI:(NSString *)appId;
-- (void)checkUpdate:(NSString *)appId (PGUpdateCallback)callback;
+- (void)checkUpdate:(NSString *)appId :(PGUpdateCallback)callback;
 
 @end
 
