@@ -22,7 +22,7 @@ WX_EXPORT_METHOD(@selector(checkUpdate::))
 //}
 
 -(void)checkUpdate:(NSString *)appId :(WXModuleCallback)callback{
-    [[PGUpdate sharedPgyManager] checkUpdate:appId :^(id error, id result) {
+    [[PGUpdate singletonManger] checkUpdate:appId :^(id error, id result) {
         if (error) {
             if (callback) {
                 callback(error);
