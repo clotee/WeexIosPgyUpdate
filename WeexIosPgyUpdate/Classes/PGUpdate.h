@@ -10,10 +10,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <PgySDK/PgyManager.h>
 #import <PgyUpdate/PgyUpdateManager.h>
+#import <PgySDK/PgyManager.h>
 
-@interface PGUpdate : NSObject <WXApiDelegate>
+@interface PGUpdate : NSObject <PGUpdateAppDelegate>
 
 @property (nonatomic, strong) NSString *appId;
 

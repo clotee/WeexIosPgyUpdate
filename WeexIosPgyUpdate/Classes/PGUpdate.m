@@ -26,6 +26,7 @@
     [[PgyManager sharedPgyManager] startManagerWithAppId:appId];
     //启动更新检查SDK
     [[PgyUpdateManager sharedPgyManager] startManagerWithAppId:appId];
+    [[PgyUpdateManager sharedPgyManager] checkUpdate];
 }
 
 - (void)checkUpdate:(NSString *)appId :(PGUpdateCallback)callback {
