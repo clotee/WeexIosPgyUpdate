@@ -16,7 +16,7 @@
 
 @protocol PGUpdatePro <WXModuleProtocol>
 
-- (void)checkUpdate:(NSString *)appId (WXModuleCallback *)callback;
+- (void)checkUpdate:(NSString *)appId :(WXModuleCallback)callback;
 
 @end
 
