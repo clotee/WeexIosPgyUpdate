@@ -27,16 +27,16 @@ TODO: Add long description of the pod here.
   s.author           = { 'clotee@foxmail.com' => 'clotee@foxmail.com' }
   s.source           = { :git => 'https://github.com/clotee/WeexIosPgyUpdate.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  
+
   s.platform = :ios, '8.0'
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'WeexIosPgyUpdate/Classes/*.{h,m}'
-  s.dependency 'WeexSDK', '0.18'
+  s.dependency 'WeexSDK', '0.20.1'
   s.dependency 'WeexPluginLoader'
   s.dependency 'Pgyer'
   s.dependency 'PgyUpdate'
-  
+
   # s.resource_bundles = {
   #   'WeexIosPgyUpdate' => ['WeexIosPgyUpdate/Assets/*.png']
   # }
